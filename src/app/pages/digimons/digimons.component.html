@@ -1,1 +1,10 @@
 <p>digimons works!</p>
+<div class="digimons-list">
+    <div class="digimon-item" *ngFor="let digimon of digimons;">
+        <p>{{digimon.name}}</p>
+        <img [src]="digimon.image" alt="">
+    </div>
+</div>
+<!-- <pre>
+    {{digimons | json}}
+</pre> -->
